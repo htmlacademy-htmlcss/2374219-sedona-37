@@ -18,4 +18,88 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
+    background-color: #FFFFFF;
+    color: #000000;
   }
+
+.hero {
+    background-color: #756157;
+    background-image: url(../images/background-hero.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.site-navigation-link {
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.main-link {
+    background-color: #756157;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.advantages h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reasons {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+
+.advantages-list-item-1, .advantages-list-item-5  {
+    background-color: #82B3D3;
+    color: #FFFFFF;
+}
+
+.advantage-title-1, .advantage-title-5 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.advantage-comment-1, .advantage-comment-5 {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.advantages-list-item-2, .advantages-list-item-3, .advantages-list-item-4 {
+    text-align: center;
+}
+
+.advantages-list-item-2, .advantages-list-item-4 {
+    background-color: rgba(131, 179, 211, 0.12)
+}
+
+.advantages-list-item-3 {
+    background-color: rgba(131, 179, 211, 0.2)
+}
+
+.advantage-title-2, .advantage-title-3, .advantage-title-4 {
+    color: #000000;
+    text-transform: uppercase;
+}
+.advantage-comment-2, .advantage-comment-3, .advantage-comment-4 {
+    font-size: 18px;
+    line-height: 21px;
+    color:#333333;
+}
