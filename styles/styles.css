@@ -48,7 +48,7 @@ body {
     background-color: #7DB54F;
 }
 
-/* кнопка "хочу сюда!" */
+/* ссылка "хочу сюда!" */
 .main-link {
     background-color: #756157;
     color: #FFFFFF;
@@ -74,7 +74,7 @@ body {
     text-align: center;
 }
 
-.advantages h2 { /* заголовок секции */
+.advantages-heading { /* заголовок секции */
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -119,3 +119,95 @@ body {
 }
 
 /* секция с условиями */
+.conditions {
+    text-align: center;
+}
+
+.conditions-heading { /* заголовок секции */
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.recommendations { /* текстовый абзац в секции*/
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.conditions-title { /* заголовки условий */
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.conditions-comment { /* описания условий */
+    font-size: 18px;
+    line-height: 21px;
+    color:#333333;
+}
+
+/* секция поиска гостиниц */
+.hotel-search-heading { /* заголовок секции */
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.hotel-dates { /* текстовый абзац в секции*/
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+.hotel-search-link { /* ссылка "поиск гостиницы в седоне" */
+    background-color: #756157;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* секция подписки */
+.subscription { /* фон и цвет текста секции */
+    background-image: url(../images/background-subscription.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.subscription-heading { /* заголовок секции */
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.subscription-comment { /* текстовый абзац в секции*/
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.subscription-form{ /*поле ввода электронной почты*/
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: #F2F2F2;
+    color: #000000;
+}
+
+.subscription-button { /* кнопка "подписаться" */
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
