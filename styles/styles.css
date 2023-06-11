@@ -24,9 +24,10 @@ body {
 
 .hero {
     background-color: #756157;
-    background-image: url(../images/background-hero.png);
+    background-image: url(../images/background-hero.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
+    text-align: center;
 }
 
 .site-navigation-link {
@@ -37,6 +38,17 @@ body {
     text-decoration: none;
 }
 
+.favorite-hotels-number {
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #7DB54F;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+
+}
 .main-link {
     background-color: #756157;
     color: #FFFFFF;
@@ -63,12 +75,12 @@ body {
     color: #333333;
 }
 
-.advantages-list-item-1, .advantages-list-item-5  {
+.advantages-list-item  {
     background-color: #82B3D3;
     color: #FFFFFF;
 }
 
-.advantage-title-1, .advantage-title-5 {
+.advantages-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -76,30 +88,30 @@ body {
     text-transform: uppercase;
 }
 
-.advantage-comment-1, .advantage-comment-5 {
+.advantages-comment {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
 }
 
-.advantages-list-item-2, .advantages-list-item-3, .advantages-list-item-4 {
+.advantages-list-item {
     text-align: center;
 }
 
-.advantages-list-item-2, .advantages-list-item-4 {
-    background-color: rgba(131, 179, 211, 0.12)
-}
-
-.advantages-list-item-3 {
-    background-color: rgba(131, 179, 211, 0.2)
-}
-
-.advantage-title-2, .advantage-title-3, .advantage-title-4 {
+.advantages-title {
     color: #000000;
     text-transform: uppercase;
 }
-.advantage-comment-2, .advantage-comment-3, .advantage-comment-4 {
+.advantages-comment {
     font-size: 18px;
     line-height: 21px;
     color:#333333;
+}
+
+.background-lightblue {
+    background-color: rgba(131, 179, 211, 0.12)
+}
+
+.background-lighter-blue {
+    background-color: rgba(131, 179, 211, 0.2)
 }
