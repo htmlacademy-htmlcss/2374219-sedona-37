@@ -42,48 +42,48 @@
       <main>
         <section class="main-input-info">
           <h1 class="catalog-name">Гостиницы Седоны</h1>
-          <ul class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="index.html">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
-            <li class="breadcrumb-item">
-              <a href="catalog.html" aria-current="page">Гостиницы</a>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
             </li>
           </ul>
           <form action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="infrastructure">
               <legend>Инфраструктура:</legend>
               <label>
-                <input class="infrastructure-input" type="checkbox" name="swimming-pool" checked>Бассейн
+                <input type="checkbox" name="swimming-pool" checked><span class="infrastructure-item">Бассейн</span>
               </label>
               <label>
-                <input class="infrastructure-input" type="checkbox" name="parking" checked>Парковка
+                <input type="checkbox" name="parking" checked><span class="infrastructure-item">Парковка</span>
               </label>
               <label>
-                <input class="infrastructure-input" type="checkbox" name="Wi-Fi">Wi-Fi
+                <input type="checkbox" name="Wi-Fi"><span class="infrastructure-item">Wi-Fi</span>
               </label>
             </fieldset>
             <fieldset class="housing">
               <legend>Тип жилья:</legend>
               <label>
-                <input class="housing-input" type="radio" name="housing-type" value="hotel" checked>Гостиница
+                <input type="radio" name="housing-type" value="hotel" checked><span class="housing-item">Гостиница</span>
               </label>
               <label>
-                <input class="housing-input" type="radio" name="housing-type" value="motel">Мотель
+                <input type="radio" name="housing-type" value="motel"><span class="housing-item">Мотель</span>
               </label>
               <label>
-                <input class="housing-input" type="radio" name="housing-type" value="apartments">Апартаменты
+                <input type="radio" name="housing-type" value="apartments"><span class="housing-item">Апартаменты</span>
               </label>
             </fieldset>
             <fieldset class="prices">
-              <legend>Стоимость:</legend>
+              <legend>Стоимость, ₽:</legend>
               <label>
-                <input class="prices-input" type="number" name="min-price" value="0" required>от
+                <input class="prices-input" type="number" name="min-price" value="0" required><span class="prices-item">от</span>
               </label>
               <label>
-                <input class="prices-input" type="number" name="max-price" value="9000" required>до
+                <input class="prices-input" type="number" name="max-price" value="9000" required><span class="prices-item">до</span>
               </label>
             </fieldset>
             <button type="submit">Применить</button>
@@ -183,16 +183,16 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-        <section class="subscription">
+        <section class="subscription-white">
           <h2 class="subscription-heading">Подпишитесь на рассылку</h2>
-          <p class="subscription-comment">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscription-comment white-comment">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <input type="text" name="subscription-mail" value="Ваш e-mail">
-            <input type="submit" value="Подписаться">
+            <input class="subscription-form" type="email" name="subscription-mail" placeholder="Ваш e-mail" required>
+            <button class="subscription-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
-      <footer class="hotels-footer">
+      <footer class="site-footer">
         <ul class="social-list">
           <li class="social-list-item">
             <a class="social-item-link" href="https://vk.com/htmlacademy">
@@ -210,7 +210,7 @@
             </a>
           </li>
         </ul>
-        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru/">
           <img src="images/html-academy-logo.svg" width="115" height="33" alt="Надпись .html-academy.">
         </a>
