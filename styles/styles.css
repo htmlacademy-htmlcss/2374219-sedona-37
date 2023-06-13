@@ -21,12 +21,13 @@ body {
     font-size: 18px;
     line-height: 21px;
     background-color: #F2F2F2;
-    width: 1200px;
+    min-width: 1280px;
     color: #000000;
   }
 
 .main-background { /* основной фон сайта */
     background-color: #FFFFFF;
+    width: 1200px;
 }
 
 .site-navigation-link { /* навигация сайта */
@@ -213,7 +214,7 @@ body {
 }
 
 .subscription-form{ /*поле ввода электронной почты*/
-    font-family: "PT Sans", sans-serif;
+    font-family: inherit;
     font-size: 18px;
     line-height: 24px;
     background-color: #F2F2F2;
@@ -294,7 +295,7 @@ body {
 }
 
 .prices-input {
-    font-family: "PT Sans", sans-serif;
+    font-family: inherit;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
