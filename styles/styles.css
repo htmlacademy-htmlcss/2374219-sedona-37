@@ -16,13 +16,40 @@
 }
 
 /* общий стиль */
+
+html {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 22px;
     line-height: 26px;
     background-color: #F2F2F2;
     color: #333333;
   }
+
+.main-container {
+    flex-grow: 1;
+}
+
+.main-navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden-items {
+    margin-left: 315px;
+}
 
 .main-background { /* основной фон сайта */
     background-color: #FFFFFF;
@@ -72,14 +99,13 @@ body {
 }
 
 .advantages-heading { /* заголовок секции */
-    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    color: #000000;
 }
 
 .advantages-title { /* заголовки преимуществ */
-    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
@@ -115,14 +141,13 @@ body {
 }
 
 .conditions-heading { /* заголовок секции */
-    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    color: #000000;
 }
 
 .conditions-title { /* заголовки условий */
-    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
@@ -156,10 +181,10 @@ body {
 }
 
 .hotel-search-heading { /* заголовок секции */
-    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    color: #000000;
 }
 
 .hotel-search-link { /* ссылка "поиск гостиницы в седоне" */
@@ -183,11 +208,9 @@ body {
 }
 
 .subscription-heading { /* заголовок секции */
-    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-    color: #000000;
 }
 
 .subscription-form{ /*поле ввода электронной почты*/
@@ -199,6 +222,7 @@ body {
 }
 
 .subscription-button { /* кнопка "подписаться" */
+    font-family: inherit;
     background-color: #82B3D3;
     color: #FFFFFF;
     font-weight: 700;
@@ -230,7 +254,6 @@ body {
 }
 
 .catalog-title { /* название каталога */
-    font-weight: 700;
     font-size: 60px;
     line-height: 78px;
 }
@@ -248,7 +271,6 @@ body {
 /* секция фильтра*/
 
 .infrastructure, .housing, .prices { /* названия групп */
-    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
@@ -297,6 +319,7 @@ body {
     font-size: 30px;
     line-height: 36px;
     color: #000000;
+    text-transform: uppercase;
 }
 
 .hotel-sorting { /* сортировка гостиниц */
@@ -307,11 +330,13 @@ body {
 
 /* список гостиниц */
 
-.hotel-link-name { /* название гостиницы */
-    font-weight: 700;
+.hotel-name { /* название гостиницы */
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+}
+
+.hotel-link-name { /* ссылка на гостиницу */
     text-decoration: none;
 }
 
@@ -368,4 +393,9 @@ body {
 /* секция подписки*/
 .subscription-white {
     text-align: center;
+}
+
+.subscription-heading-black {
+    color: #000000;
+    text-transform: uppercase;
 }
