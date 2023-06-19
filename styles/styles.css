@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* добавляем шрифты */
 @font-face {
     font-family: "PT Sans";
@@ -22,37 +28,57 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 22px;
     line-height: 26px;
     background-color: #F2F2F2;
     color: #333333;
+    height: 100%;
+    margin: 0;
   }
 
-.main-container {
+.main-container { /* основной фон сайта */
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 100%;
+    background-color: #FFFFFF;
+}
+
+.page {
     flex-grow: 1;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
 }
 
 .main-navigation {
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
+    flex-direction: row;
 }
 
 .site-navigation {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
 }
 
 .hidden-items {
-    margin-left: 315px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
 }
 
-.main-background { /* основной фон сайта */
-    background-color: #FFFFFF;
+.main-link {
+    display: block;
+    align-items: flex-start;
+    padding: auto;
+    height: 20px;
 }
 
 .site-navigation-link { /* навигация сайта */
