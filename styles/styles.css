@@ -52,51 +52,54 @@ body {
 
 .main-header {
     display: flex;
-    flex-direction: row;
+    height: 64px;
+    padding: 0 70px;
 }
 
 .main-navigation {
     display: flex;
-    flex-direction: row;
 }
 
 .site-navigation {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
+}
+
+.logo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: 30px;
 }
 
 .visually-hidden {
     margin: 0;
 }
 
-.site-navigation-item {
-    padding: 20px 16px;
-}
-
 .hidden-items {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
+    justify-content: flex-end;
+    margin: 0;
 }
 
-.main-link {
-    display: block;
-    align-items: flex-start;
-    padding: auto;
-    height: 20px;
+.hidden-item-link {
+    padding: 22px 12px;
 }
 
 .site-navigation-link { /* навигация сайта */
+    display: block;
     color: #000000;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     text-decoration: none;
+    padding: 20px 16px;
 }
 
 .favorite-hotels-number { /* количество избранных отелей */
@@ -108,12 +111,13 @@ body {
 }
 
 .main-link { /* ссылка "хочу сюда!" */
+    display: block;
+    justify-content: flex-end;
+    height: 20px;
     background-color: #756157;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
-    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -130,6 +134,14 @@ body {
 }
 
 /* секция с преимуществами */
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .advantages {
     text-align: center;
 }
@@ -161,14 +173,34 @@ body {
 
 .advantages-list-item  { /* цвет фона преимуществ 1 и 5*/
     background-color: #82B3D3;
+    width: 1200px;
+}
+
+.text-advantages {
+    flex-direction: column;
+}
+
+.blue-container-top {
+    display: flex;
+}
+
+.blue-container-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mid-advantages {
+    display: flex;
 }
 
 .background-lightblue { /* цвет фона преимуществ 2 и 4 */
     background-color: rgba(131, 179, 211, 0.12);
+    width: 400px;
 }
 
 .background-lighter-blue { /* цвет фона преимущества 3 */
     background-color: rgba(131, 179, 211, 0.2);
+    width: 400px;
 }
 
 /* секция с условиями */
