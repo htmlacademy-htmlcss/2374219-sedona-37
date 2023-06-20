@@ -65,6 +65,16 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    margin: 0;
+}
+
+.site-navigation-item {
+    padding: 20px 16px;
 }
 
 .hidden-items {
