@@ -131,6 +131,8 @@ body {
     background-repeat: no-repeat;
     background-size: 100% auto;
     text-align: center;
+    padding-top: 52px;
+    padding-bottom: 83px;
 }
 
 /* секция с преимуществами */
@@ -151,6 +153,16 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     color: #000000;
+    padding: 69px 290px 25px;
+    min-height: 72px;
+}
+.reasons {
+    padding-bottom: 69px;
+    margin-top: 25px;
+    min-height: 26px;
+    padding-left: 275px;
+    padding-right: 274px;
+
 }
 
 .advantages-title { /* заголовки преимуществ */
@@ -158,12 +170,21 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
+    padding-right: 85px;
+    padding-left: 85px;
+    padding-top: 102px;
+    margin: 0;
 }
 
 .advantages-comment { /* описания преимуществ */
     font-size: 18px;
     line-height: 21px;
     color:#333333;
+    padding-right: 85px;
+    padding-left: 85px;
+    padding-bottom: 102px;
+    padding-top: 62px;
+    margin: 0;
 }
 
 .color-white .advantages-title,
@@ -177,6 +198,7 @@ body {
 }
 
 .text-advantages {
+    display: flex;
     flex-direction: column;
 }
 
@@ -189,18 +211,23 @@ body {
     flex-direction: row-reverse;
 }
 
-.mid-advantages {
-    display: flex;
+.light-blue-container {
+    width: 400px;
+    min-height: 385px;
+    justify-content: center;
+}
+
+.lighter-blue-container {
+    width: 400px;
+    min-height: 400px;
 }
 
 .background-lightblue { /* цвет фона преимуществ 2 и 4 */
     background-color: rgba(131, 179, 211, 0.12);
-    width: 400px;
 }
 
 .background-lighter-blue { /* цвет фона преимущества 3 */
     background-color: rgba(131, 179, 211, 0.2);
-    width: 400px;
 }
 
 /* секция с условиями */
