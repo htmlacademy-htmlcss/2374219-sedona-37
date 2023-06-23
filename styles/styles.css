@@ -54,6 +54,7 @@ body {
     display: flex;
     min-height: 64px;
     padding: 0 70px;
+    margin: 0;
 }
 
 .main-navigation {
@@ -68,6 +69,7 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+
 }
 
 .logo {
@@ -90,16 +92,13 @@ body {
     overflow: hidden;
 }
 
-.hidden-items {
+.hidden-items-list {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    justify-content: center;
     margin-left: auto;
-}
-
-.hidden-item-link {
-    padding: 22px 12px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .site-navigation-link { /* навигация сайта */
@@ -115,21 +114,61 @@ body {
 .favorite-hotels-number { /* количество избранных отелей */
     font-size: 10px;
     line-height: 10px;
-    text-align: center;
     color: #FFFFFF;
     background-color: #7DB54F;
+    border-radius: 10px;
+    padding: 5px 5px 5px 4px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 11px;
 }
 
 .main-link { /* ссылка "хочу сюда!" */
     display: block;
     justify-content: flex-end;
-    height: 20px;
     background-color: #756157;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
+    margin-left: 20px;
+    min-height: 36px;
+    width: 160px;
+    margin-right: 34px;
+    align-self: center;
+    border-radius: 4px;
+}
+
+.want-here {
+    min-width: 60px;
+    padding-left: 34px;
+    display: block;
+    padding-top: 5px;
+}
+
+.hidden-item-search {
+    background-image: url(../images/search-icon.svg);
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 64px;
+    background-position: center;
+    display: inline-block;
+}
+
+.hidden-item-favorite {
+    background-image: url(../images/favorites-icon.svg);
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 64px;
+    background-position: center;
+    display: inline-block;
+}
+
+.hidden-item, .site-navigation-item {
+    height: 64px;
 }
 
 /* index */
@@ -425,20 +464,29 @@ body {
 .vkontakte {
     background-image: url(../images/vkontakte-logo.svg);
     background-repeat: no-repeat;
+    width: 24px;
+    height: 14px;
 }
 
 .telegram {
     background-image: url(../images/telegram-logo.svg);
     background-repeat: no-repeat;
+    width: 18px;
+    height: 16px;
 }
 
 .youtube {
     background-image: url(../images/youtube-logo.svg);
     background-repeat: no-repeat;
+    width: 22px;
+    height: 17px;
 }
-
 .social-list {
     display: grid;
+}
+
+.social-list-item {
+    list-style-type: none;
 }
 
 /* catalog */
