@@ -678,20 +678,30 @@ body {
     line-height: 36px;
     color: #000000;
     text-transform: uppercase;
+    margin-right: auto;
+    align-self: center;
+    margin-top: 0;
+    display: inline-block;
+    margin-bottom: 0;
 }
 
 .hotel-sorting { /* сортировка гостиниц */
     font-size: 18px;
     line-height: 21px;
     color: inherit;
+    border: 2px solid #E5E5E5;
+    padding: 14px 20px;
+    width: 292px;
+    border-radius: 4px;
 }
 
 /* список гостиниц */
 
 .found-sorting {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
 
 .hotels-container {
@@ -711,6 +721,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     border: 2px solid #000000;
+    margin-left: 70px;
 }
 
 .one-card-view {
@@ -718,6 +729,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     border: 2px solid #E5E5E5;
+    margin-left: 8px;
 }
 
 .card-list-view {
@@ -725,22 +737,28 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     border: 2px solid #E5E5E5;
+    margin-left: 8px;
 }
 
 .hotel-list {
     display: grid;
-    grid-template-columns: 340px 340px 340px;
-    grid-template-rows: 438px 438px;
+    grid-template-columns: repeat(3, 340px);
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    margin-bottom: 80px;
 }
 
 .hotel-list-item {
     list-style-type: none;
+    display: grid;
 }
 
 .hotel-name { /* название гостиницы */
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    margin: 0;
 }
 
 .hotel-link-name { /* ссылка на гостиницу */
