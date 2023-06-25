@@ -427,6 +427,7 @@ body {
 }
 
 .subscription-heading { /* заголовок секции */
+    font-family: inherit;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
@@ -437,6 +438,7 @@ body {
 }
 
 .subscription-comment {
+    font-weight: 400;
     margin: 0;
     padding-left: 363px;
     padding-right: 362px;
@@ -686,11 +688,12 @@ body {
 }
 
 .hotel-sorting { /* сортировка гостиниц */
+    font-family: inherit;
     font-size: 18px;
     line-height: 21px;
     color: inherit;
     border: 2px solid #E5E5E5;
-    padding: 14px 20px;
+    padding: 12px 18px;
     width: 292px;
     border-radius: 4px;
 }
@@ -714,6 +717,8 @@ body {
     padding: 14px 12px;
     background-color: #FFFFFF;
     border-radius: 4px;
+    display: inline-block;
+    align-self: center;
 }
 
 .cards-view {
@@ -752,6 +757,12 @@ body {
 .hotel-list-item {
     list-style-type: none;
     display: grid;
+    grid-template-columns: 140px 20px 140px;
+    grid-template-rows: 300px 28px min-content min-content 37px;
+    margin: 0;
+    padding: 19px;
+    border-radius: 4px;
+    border: 1px solid #E6E6E6;
 }
 
 .hotel-name { /* название гостиницы */
@@ -759,56 +770,104 @@ body {
     line-height: 28px;
     color: #000000;
     margin: 0;
+    margin-bottom: 16px;
 }
 
 .hotel-link-name { /* ссылка на гостиницу */
     text-decoration: none;
+    grid-column: 1/4;
+    grid-row: 2/3;
 }
 
-.hotel-subject, .hotel-minprice { /* вид жилья и стоимость */
+.hotel-link-img {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-bottom: 16px;
+}
+
+.hotel-subject { /* вид жилья */
     font-size: 18px;
     line-height: 21px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-bottom: 16px;
+}
+
+.hotel-minprice { /* стоимость жилья */
+    font-size: 18px;
+    line-height: 21px;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin-bottom: 16px;
+    text-align: right;
 }
 
 .hotel-rating { /* рейтинг гостиницы */
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    grid-column: 3/4;
+    grid-row: 5/6;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
 }
 
 .hotel-details { /* ссылка "подробнее" */
     background-color: #756157;
     text-decoration: none;
+    grid-column: -1/-2;
+    grid-row: -2/-3;
+    padding: 8px 26px;
+    margin-bottom: 16px;
 }
 
 .hotel-in-favorites { /* кнопка "в избранном" */
     background-color: #7DB54F;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.hotel-to-favorites {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.hotel-stars{
+    grid-column: 1/2;
+    grid-row: 5/6;
 }
 
 .pagination-list {
-    display: grid;
-    grid-template-columns: 60px 60px 60px 60px 60px 60px;
-    grid-template-rows: 60px;
+    padding: 0;
 }
 
-.pagination-link { /* пагинация с голубым фоном */
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
+.pagination-item {
+    min-width: 60px;
+    height: 60px;
+    list-style-type: none;
     background-color: #82B3D3;
     color: #FFFFFF;
     text-align: center;
-    text-decoration: none;
+    margin-right: 8px;
+    border-radius: 4px;
+    display: inline-block;
 }
 
 .pagination-link { /* пагинация с голубым фоном */
+    display: flex;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
-    background-color: #82B3D3;
     color: #FFFFFF;
-    text-align: center;
     text-decoration: none;
+    justify-content: center;
+    padding: 0 12px;
 }
 
 .pagination-current{ /* текущая страница 1 */
@@ -817,7 +876,7 @@ body {
 }
 
 .dots { /* точки */
-    background-color: inherit;
+    background-color: #FFFFFF ;
     color: #000000;
 }
 
