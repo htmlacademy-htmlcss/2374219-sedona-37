@@ -37,9 +37,7 @@
             </li>
           </ul>
         </nav>
-        <a class="main-link" href="#">
-          <span class="want-here">Хочу сюда!</span>
-        </a>
+        <a class="main-link" href="#">Хочу сюда!</a>
       </header>
       <main class="page">
         <section class="catalog-filter">
@@ -64,7 +62,7 @@
                 <input type="checkbox" name="parking" checked><span class="infrastructure-item">Парковка</span>
               </label>
               <label>
-                <input type="checkbox" name="Wi-Fi"><span class="infrastructure-item">Wi-Fi</span>
+                <input type="checkbox" name="Wi-Fi"><span class="infrastructure-item last-item">Wi-Fi</span>
               </label>
             </fieldset>
             <fieldset class="housing housing-set">
@@ -76,7 +74,7 @@
                 <input type="radio" name="housing-type" value="motel"><span class="housing-item">Мотель</span>
               </label>
               <label>
-                <input type="radio" name="housing-type" value="apartments"><span class="housing-item">Апартаменты</span>
+                <input type="radio" name="housing-type" value="apartments"><span class="housing-item last-item">Апартаменты</span>
               </label>
             </fieldset>
             <fieldset class="prices prices-set">
@@ -125,7 +123,9 @@
                 <p class="hotel-minprice">От 4000 ₽</p>
                 <a href="#" class="catalog-button hotel-details">Подробнее</a>
                 <button class="catalog-button hotel-to-favorites" type="button">В избранное</button>
-                <span class="visually-hidden hotel-stars">4 звезды</span>
+                <span class="visually-hidden">
+                  <span class="hotel-stars">4 звезды</span>
+                </span>
                 <span class="hotel-rating">Рейтинг: 8,5</span>
               </li>
               <li class="hotel-list-item">
@@ -139,7 +139,9 @@
                 <p class="hotel-minprice">От 5000 ₽</p>
                 <a href="#" class="catalog-button hotel-details">Подробнее</a>
                 <button class="catalog-button hotel-in-favorites" type="button">В избранном</button>
-                <span class="visually-hidden hotel-stars">4 звезды</span>
+                <span class="visually-hidden">
+                  <span class="hotel-stars">4 звезды</span>
+                </span>
                 <span class="hotel-rating">Рейтинг: 9,2</span>
               </li>
               <li class="hotel-list-item">
@@ -153,25 +155,31 @@
                 <p class="hotel-minprice">От 2500 ₽</p>
                 <a href="#" class="catalog-button hotel-details">Подробнее</a>
                 <button class="catalog-button hotel-to-favorites" type="button">В избранное</button>
-                <span class="visually-hidden hotel-stars">3 звезды</span>
+                <span class="visually-hidden">
+                  <span class="hotel-stars">3 звезды</span>
+                </span>
                 <span class="hotel-rating">Рейтинг: 6,9</span>
               </li>
               <li class="hotel-list-item">
                 <a class="hotel-link-name" href="#">
                   <h3 class="hotel-name">GreenTree Inn</h3>
+                </a>
+                <a class="hotel-link-img" href="#">
                   <img src="images/hotel-4.jpg" width="300" height="212" alt="Изображение отеля GreenTree Inn.">
                 </a>
                 <p class="hotel-subject">Гостиница</p>
                 <p class="hotel-minprice">От 4000 ₽</p>
                 <a href="#" class="catalog-button hotel-details">Подробнее</a>
                 <button class="catalog-button hotel-to-favorites" type="button">В избранное</button>
-                <span class="visually-hidden hotel-stars">2 звезды</span>
+                <span class="visually-hidden">
+                  <span class="hotel-stars">2 звезды</span>
+                </span>
                 <span class="hotel-rating">Рейтинг: 5,0</span>
               </li>
             </ul>
           </section>
           <ul class="pagination-list">
-            <li class="pagination-item pagination-current">
+            <li class="pagination-item">
               <a class="pagination-link pagination-current" href="catalog.html" aria-current="page">1</a>
             </li>
             <li class="pagination-item">
