@@ -44,6 +44,7 @@ body {
     margin: 0 auto;
     min-height: 100%;
     background-color: #FFFFFF;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 .page {
@@ -474,6 +475,20 @@ body {
     border-radius: 0 4px 4px 0;
     min-height: 52px;
     min-width: 232px;
+    cursor: pointer;
+}
+
+.subscription-button:hover {
+    background-color: #68A2CA;
+}
+
+.subscription-button:focus {
+    background-color: #68A2CA;
+}
+
+.subscription-button:active {
+    background-color: #68A2CA;
+    color: rgba(255, 255, 255, 1);
 }
 
 /* футер */
@@ -496,6 +511,19 @@ body {
     text-decoration: none;
 }
 
+.phone-link:hover {
+    fill: #756157;
+}
+
+.phone-link:focus {
+    fill: #756157;
+    outline: none;
+}
+
+.phone-link:active {
+    fill: rgba(117, 97, 87, 0.3)
+}
+
 .vkontakte {
     background-image: url(../images/vkontakte-logo.svg);
     background-repeat: no-repeat;
@@ -513,6 +541,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .social-list {
     display: grid;
     grid-template-columns: repeat(3, 48px);
@@ -530,6 +559,30 @@ body {
     display: block;
     width: 48px;
     height: 40px;
+}
+
+.social-item-link:hover {
+    fill: #68A2CA;
+}
+
+.social-item-link:focus {
+    fill: #68A2CA;
+}
+
+.social-item-link:active {
+    fill: rgba(104, 162, 202, 0.3)
+}
+
+.html-logo-link:hover {
+    fill: #756157;
+}
+
+.html-logo-link:focus {
+    fill: #756157;
+}
+
+.html-logo-link:active {
+    fill: rgba(117, 97, 87, 0.3)
 }
 
 /* catalog */
@@ -585,6 +638,14 @@ body {
     padding-left: 18px;
 }
 
+.breadcrumbs-home:hover, .breadcrumbs-catalog:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-home:hover, .breadcrumbs-catalog:hover {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 /* секция фильтра*/
 
 .filter-info {
@@ -625,7 +686,6 @@ body {
     line-height: 23px;
     margin-bottom: 16px;
     display: inline-block;
-
 }
 
 .last-item {
@@ -689,6 +749,11 @@ body {
     border: none;
     width: 100%;
     height: auto;
+    cursor: pointer;
+}
+
+.catalog-button:hover {
+    background-color: #68A2CA;
 }
 
 .catalog-no-color { /* кнопка сброса без фона */
@@ -728,6 +793,18 @@ body {
     padding: 12px 18px;
     width: 292px;
     border-radius: 4px;
+}
+
+.hotel-sorting:hover {
+    border-color: #68A2CA;
+}
+
+.hotel-sorting:focus {
+    border-color: #68A2CA;
+}
+
+.hotel-sorting:disabled {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 /* список гостиниц */
@@ -848,6 +925,18 @@ body {
     padding: 8px 26px;
 }
 
+.hotel-details:hover {
+    background-color: #615048;
+}
+
+.hotel-details:focus {
+    background-color: #615048;
+}
+
+.hotel-details:active {
+    color: rgba(255, 255, 255, 0.3)
+}
+
 .hotel-in-favorites { /* кнопка "в избранном" */
     background-color: #7DB54F;
     padding: 0;
@@ -858,7 +947,10 @@ body {
 }
 
 .hotel-stars{
-
+    background-image: url(../images/star-hotel-icon.svg);
+    background-repeat: space;
+    height: 17px;
+    width: 18px;
 }
 
 .pagination-list {
@@ -887,11 +979,38 @@ body {
     border-radius: 4px;
 }
 
-.pagination-current{ /* текущая страница 1 */
+.pagination-link:hover {
+    background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+    background-color: #68A2CA;
+}
+
+.pagination-link:active {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.pagination-current { /* текущая страница 1 */
     background-color: #F2F2F2;
     color: #000000;
     border-radius: 4px;
     margin-right: 8px;
+}
+
+.pagination-current:hover  {
+    background-color: #F2F2F2;
+    color: #000000;
+}
+
+.pagination-current:focus {
+    background-color: #F2F2F2;
+    color: #000000;
+}
+
+.pagination-current:active {
+    background-color: #F2F2F2;
+    color: #000000;
 }
 
 .dots { /* точки */
