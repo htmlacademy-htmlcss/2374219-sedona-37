@@ -151,6 +151,23 @@ body {
     text-align: center;
 }
 
+.main-link:hover {
+    background-color: #615048;
+}
+
+.main-link:focus {
+    background-color: #615048;
+}
+
+.main-link:active {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.main-link:disabled {
+    background-color: #E5E5E5;
+    color: #FFFFFF;
+}
+
 .hidden-item-search {
     background-image: url(../images/search-icon.svg);
     background-repeat: no-repeat;
@@ -172,6 +189,10 @@ body {
 
 .hidden-item, .site-navigation-item {
     height: 64px;
+}
+
+.site-navigation-item-current {
+    border-bottom: 2px solid rgba(117, 98, 87, 1);
 }
 
 /* index */
@@ -242,6 +263,16 @@ body {
     padding-bottom: 102px;
     padding-top: 62px;
     margin: 0;
+}
+
+.advantages-comment::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 60px;
+    height: 2px;
+    top: -33px;
+    transform: translateX(-50%);
 }
 
 .color-white .advantages-title,
@@ -414,6 +445,18 @@ body {
     margin: 54px 412px 96px;
 }
 
+.hotel-search-link:hover {
+    background-color: #615048;
+}
+
+.hotel-search-link:focus {
+    background-color: #615048;
+}
+
+.hotel-search-link:active {
+    color: rgba(255, 255, 255, 0.3)
+}
+
 /* секция подписки */
 
 .form-line {
@@ -421,6 +464,7 @@ body {
     justify-content: center;
     margin-top: 54px;
 }
+
 .subscription { /* фон и цвет текста секции */
     background-image: url(../images/background-subscription.jpg);
     background-repeat: no-repeat;
@@ -449,7 +493,7 @@ body {
     padding-right: 362px;
 }
 
-.subscription-form{ /*поле ввода электронной почты*/
+.subscription-form { /*поле ввода электронной почты*/
     font-family: inherit;
     font-size: 18px;
     line-height: 24px;
@@ -488,7 +532,7 @@ body {
 
 .subscription-button:active {
     background-color: #68A2CA;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 /* футер */
@@ -512,34 +556,15 @@ body {
 }
 
 .phone-link:hover {
-    fill: #756157;
+    color: #756157;
 }
 
 .phone-link:focus {
-    fill: #756157;
-    outline: none;
+    color: #756157;
 }
 
 .phone-link:active {
-    fill: rgba(117, 97, 87, 0.3)
-}
-
-.vkontakte {
-    background-image: url(../images/vkontakte-logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.telegram {
-    background-image: url(../images/telegram-logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.youtube {
-    background-image: url(../images/youtube-logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    color: rgba(117, 97, 87, 0.3)
 }
 
 .social-list {
@@ -552,7 +577,6 @@ body {
 
 .social-list-item {
     list-style-type: none;
-    align-items: center;
 }
 
 .social-item-link {
@@ -561,27 +585,27 @@ body {
     height: 40px;
 }
 
-.social-item-link:hover {
+.social-item-link:hover path {
     fill: #68A2CA;
 }
 
-.social-item-link:focus {
+.social-item-link:focus path {
     fill: #68A2CA;
 }
 
-.social-item-link:active {
+.social-item-link:active path {
     fill: rgba(104, 162, 202, 0.3)
 }
 
-.html-logo-link:hover {
+.html-academy-logo:hover path {
     fill: #756157;
 }
 
-.html-logo-link:focus {
+.html-academy-logo:focus path {
     fill: #756157;
 }
 
-.html-logo-link:active {
+.html-academy-logo:active path {
     fill: rgba(117, 97, 87, 0.3)
 }
 
@@ -638,11 +662,11 @@ body {
     padding-left: 18px;
 }
 
-.breadcrumbs-home:hover, .breadcrumbs-catalog:hover {
+.breadcrumbs-catalog:hover {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-home:hover, .breadcrumbs-catalog:hover {
+.breadcrumbs-catalog:active {
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -674,6 +698,12 @@ body {
 .housing-set {
     display: flex;
     flex-direction: column;
+}
+
+.infra-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
 }
 
 .prices-set {
@@ -756,10 +786,42 @@ body {
     background-color: #68A2CA;
 }
 
+.catalog-button:focus {
+    background-color: #68A2CA;
+}
+
+.catalog-button:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-button:disabled {
+    background-color: #E5E5E5;
+    color: rgba(255, 255, 255, 0.1);
+}
+
 .catalog-no-color { /* кнопка сброса без фона */
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     border: none;
     margin-top: 32px;
+}
+
+.catalog-no-color:hover {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-no-color:focus {
+    background-color: transparent;
+}
+
+.catalog-no-color:active {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-no-color:disabled {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.1);
 }
 
 .filter-buttons {
@@ -790,9 +852,12 @@ body {
     line-height: 21px;
     color: inherit;
     border: 2px solid #E5E5E5;
-    padding: 12px 18px;
+    min-height: 49px;
     width: 292px;
     border-radius: 4px;
+    cursor: pointer;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 .hotel-sorting:hover {
@@ -828,13 +893,14 @@ body {
     border-radius: 4px;
     display: inline-block;
     align-self: center;
+    border: 2px solid #E5E5E5;
+    cursor: pointer;
 }
 
 .cards-view {
     background-image: url(../images/view-cards.svg);
     background-repeat: no-repeat;
     background-position: center;
-    border: 2px solid #000000;
     margin-left: 70px;
 }
 
@@ -842,7 +908,6 @@ body {
     background-image: url(../images/view-one-card.svg);
     background-repeat: no-repeat;
     background-position: center;
-    border: 2px solid #E5E5E5;
     margin-left: 8px;
 }
 
@@ -850,8 +915,23 @@ body {
     background-image: url(../images/view-list.svg);
     background-repeat: no-repeat;
     background-position: center;
-    border: 2px solid #E5E5E5;
     margin-left: 8px;
+}
+
+.hotel-card-view-current {
+    border: 2px solid #000000;
+}
+
+.hotel-card-view:hover {
+    border: 2px solid #000000;
+}
+
+.hotel-card-view:focus {
+    border: 2px solid #000000;
+}
+
+.hotel-card-view:active {
+    border: 2px solid #000000;
 }
 
 .hotel-list {
@@ -874,6 +954,10 @@ body {
     align-content: start;
     row-gap: 16px;
     column-gap: 20px;
+}
+
+.hotel-image {
+    vertical-align: bottom;
 }
 
 .hotel-name { /* название гостиницы */
@@ -940,6 +1024,18 @@ body {
 .hotel-in-favorites { /* кнопка "в избранном" */
     background-color: #7DB54F;
     padding: 0;
+}
+
+.hotel-in-favorites:hover {
+    background-color: #6C9E42;
+}
+
+.hotel-in-favorites:focus {
+    background-color: #6C9E42;
+}
+
+.hotel-in-favorites:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-to-favorites {
@@ -1015,6 +1111,15 @@ body {
 
 .dots { /* точки */
     background-color: #FFFFFF ;
+    color: #000000;
+}
+
+.dots:hover {
+    background-color: #F2F2F2;
+}
+
+.dots:active {
+    background-color: #F2F2F2;
     color: #000000;
 }
 
