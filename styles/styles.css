@@ -73,7 +73,6 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-
 }
 
 .logo {
@@ -187,12 +186,25 @@ body {
     margin-right: 20px;
 }
 
-.hidden-item, .site-navigation-item {
+.hidden-item {
     height: 64px;
 }
 
-.site-navigation-item-current {
-    border-bottom: 2px solid rgba(117, 98, 87, 1);
+.site-navigation-item {
+    height: 64px;
+    position: relative;
+}
+
+
+.site-navigation-item-current::before {
+    content: " ";
+    position: absolute;
+    height: 2px;
+    background-color: #756157;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+    width: auto;
 }
 
 /* index */
@@ -704,6 +716,40 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 5px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.infra-box:checked {
+    background-image: url(../images/checked-box-icon.svg);
+}
+
+.house-name:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.house-name:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.infrastructure-name:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.infrastructure-name:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.house-radio {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.house-radio:hover {
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .prices-set {
@@ -716,6 +762,9 @@ body {
     line-height: 23px;
     margin-bottom: 16px;
     display: inline-block;
+    cursor: pointer;
+    margin-left: 16px;
+    vertical-align: top;
 }
 
 .last-item {
@@ -1042,11 +1091,22 @@ body {
     padding: 0;
 }
 
-.hotel-stars{
+.hotel-stars {
     background-image: url(../images/star-hotel-icon.svg);
-    background-repeat: space;
     height: 17px;
-    width: 18px;
+    background-repeat: space;
+}
+
+.four-stars {
+    width: 80px;
+}
+
+.three-stars {
+    width: 60px;
+}
+
+.two-stars {
+    width: 40px;
 }
 
 .pagination-list {
