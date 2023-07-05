@@ -56,20 +56,20 @@
               <img class="advantages-images" src="images/advantage-1.jpg" width="800" height="385" alt="Изображение городка Седоны.">
             </li>
             <li class="advantages-list-item background-lightblue light-blue-container">
-              <h3 class="advantages-title">Небольшая площадь</h3>
+              <h3 class="advantages-title title-blue">Небольшая площадь</h3>
               <p class="advantages-comment">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="advantages-list-item background-lighter-blue lighter-blue-container">
-              <h3 class="advantages-title">Красивая <br>дорога</h3>
+              <h3 class="advantages-title title-blue">Красивая <br>дорога</h3>
               <p class="advantages-comment">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages-list-item background-lightblue light-blue-container">
-              <h3 class="advantages-title">Мало <br>туристов</h3>
+              <h3 class="advantages-title title-blue">Мало <br>туристов</h3>
               <p class="advantages-comment">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-list-item color-white background-blue blue-container-bottom">
               <div class="text-advantages">
-                <h3 class="advantages-title">Там есть мост дьявола</h3>
+                <h3 class="advantages-title">Там есть мост&nbsp;дьявола</h3>
                 <p class="advantages-comment">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
               <img class="advantages-images" src="images/advantage-2.jpg" width="800" height="385" alt="Изображение моста дьявола в Седоне.">
@@ -82,7 +82,7 @@
           <ul class="conditions-list">
             <li class="conditions-list-item background-lightblue item-housing">
               <h3 class="conditions-title">Жильё</h3>
-              <p class="conditions-comment">Рекомендуем пожить в настоящем мотеле, всё как&nbsp;в&nbsp;кино!</p>
+              <p class="conditions-comment">Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в кино!</p>
             </li>
             <li class="conditions-list-item item-food">
               <h3 class="conditions-title">Еда</h3>
@@ -143,6 +143,44 @@
           </svg>
         </a>
       </footer>
+    </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-body">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="modal-form-label">
+              <span class="modal-form-title">Дата заезда:</span>
+              <input class="modal-form-date" type="text" placeholder="Укажите дату" value="27 апреля 2020">
+            </label>
+            <p class="modal-form-comment error-warning">Мы не можем отправить вас в прошлое.</p>
+            <label class="modal-form-label">
+              <span class="modal-form-title">Дата выезда:</span>
+              <input class="modal-form-date" type="text" placeholder="Укажите дату" value="1 сентября 2023">
+            </label>
+            <p class="modal-form-comment">На эти даты есть свободные номера. Пока есть.</p>
+            <label class="modal-form">
+              <span class="modal-form-title">Взрослые:</span>
+              <button class="button-minus" type="button">-</button>
+              <input class="modal-input-adults" type="text" value="2">
+              <button class="button-plus" type="button">+</button>
+            </label>
+            <label class="modal-form-label">
+              <span class="modal-form-title">Дети:</span>
+              <span class="mark-i">
+                <span class="visually-hidden">i</span>
+              </span>
+              <button class="button-minus" type="button">-</button>
+              <input class="modal-input-children" type="text" value="2">
+              <button class="button-plus" type="button">+</button>
+            </label>
+            <button class="modal-search-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
