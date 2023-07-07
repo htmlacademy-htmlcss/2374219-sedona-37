@@ -144,37 +144,43 @@
         </a>
       </footer>
     </div>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container"><!--modal-container-close-->
       <div class="modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-body">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal-form-label">
-              <span class="modal-form-title">Дата заезда:</span>
-              <input class="modal-form-date" type="text" placeholder="Укажите дату" value="27 апреля 2020">
-            </label>
-            <p class="modal-form-comment error-warning">Мы не можем отправить вас в прошлое.</p>
-            <label class="modal-form-label">
-              <span class="modal-form-title">Дата выезда:</span>
-              <input class="modal-form-date" type="text" placeholder="Укажите дату" value="1 сентября 2023">
-            </label>
+            <div class="arrival-date-container">
+              <label class="modal-form-label">
+                <span class="modal-form-title arrival-date">Дата заезда:</span>
+                <input class="modal-form-date" name="дата заезда" type="text" placeholder="Укажите дату" value="27 апреля 2020" required>
+              </label>
+              <p class="modal-form-comment error-warning">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="departure-date-container">
+              <label class="modal-form-label">
+                <span class="modal-form-title departure-date">Дата выезда:</span>
+                <input class="modal-form-date" name="дата выезда" type="text" placeholder="Укажите дату" value="1 сентября 2023" required>
+              </label>
             <p class="modal-form-comment">На эти даты есть свободные номера. Пока есть.</p>
-            <label class="modal-form">
+            </div>
+            <label class="modal-form-label">
               <span class="modal-form-title">Взрослые:</span>
               <button class="button-minus" type="button">-</button>
-              <input class="modal-input-adults" type="text" value="2">
+              <input class="modal-input-adults" name="количество взрослых" type="number" value="2" min=0 max=99>
               <button class="button-plus" type="button">+</button>
             </label>
             <label class="modal-form-label">
               <span class="modal-form-title">Дети:</span>
-              <span class="mark-i">
-                <span class="visually-hidden">i</span>
-              </span>
+              <span class="visually-hidden">Информация про детей</span>
+              <svg role="img" aria-label="иконка инфо" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff"/>
+              </svg>
               <button class="button-minus" type="button">-</button>
-              <input class="modal-input-children" type="text" value="2">
+              <input class="modal-input-children" name="количество детей" type="number" value="2" min=0 max=99>
               <button class="button-plus" type="button">+</button>
             </label>
             <button class="modal-search-button" type="submit">Найти</button>

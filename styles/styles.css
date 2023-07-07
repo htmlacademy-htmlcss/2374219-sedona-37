@@ -1070,7 +1070,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    gap: 20px;
+    gap: 19px;
 }
 
 .hotel-list::after {
@@ -1197,14 +1197,15 @@ body {
     background-image: url(../images/star-hotel-icon.svg);
     height: 17px;
     background-repeat: space;
+    align-self: center;
 }
 
 .four-stars {
-    width: 80px;
+    width: 89px;
 }
 
 .three-stars {
-    width: 60px;
+    width: 65px;
 }
 
 .two-stars {
@@ -1214,7 +1215,7 @@ body {
 .pagination-list {
     display: flex;
     padding: 0;
-    margin-top: 80px;
+    margin-top: 78px;
     margin-bottom: 0;
 }
 
@@ -1359,12 +1360,6 @@ body {
     line-height: 24px;
     text-transform: capitalize;
     font-weight: 700;
-    align-self: center;
-    display: inline-block;
-}
-
-.modal-form-label {
-    display: flex;
 }
 
 .modal-form-date {
@@ -1374,11 +1369,10 @@ body {
     line-height: 24px;
     font-family: PT Sans;
     padding: 12px 20px;
-    justify-content: space-between;
     border: none;
     background-color: #F2F2F2;
     border-radius: 4px;
-    width: 100%;
+    width: 440px;
 }
 
 .modal-input-adults, .modal-input-children {
@@ -1394,6 +1388,9 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
+    margin-top: 4px;
+    margin-bottom: 23px;
+    margin-left: 157px;
 }
 
 .error-warning {
@@ -1401,6 +1398,9 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
+    margin-top: 4px;
+    margin-bottom: 23px;
+    margin-left: 157px;
 }
 
 .modal-container-close {
@@ -1420,4 +1420,14 @@ body {
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
+}
+
+.arrival-date {
+    width: 113px;
+    margin-right: 18px;
+}
+
+.departure-date {
+    width: 119px;
+    margin-right: 12px;
 }
