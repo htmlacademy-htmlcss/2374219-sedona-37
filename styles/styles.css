@@ -692,6 +692,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 35px 70px 70px 70px;
+    min-height: 412px;
 }
 
 .catalog-title { /* название каталога */
@@ -713,16 +714,17 @@ body {
 
 .breadcrumbs-item {
     list-style-type: none;
+    min-height: 21px;
 }
 
 .breadcrumbs-home {
     background-image: url(../images/main-breadcrumbs-icon.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-y: 3px;
     color: #FFFFFF;
     text-decoration: none;
     width: 13px;
-    height: 15px;
+    height: 17px;
     display: block;
 }
 
@@ -748,7 +750,7 @@ body {
 
 .filter-info {
     display: flex;
-    justify-content: space-between;
+    min-height: 157px;
 }
 
 .infrastructure, .housing, .prices {
@@ -773,21 +775,90 @@ body {
 .housing-set {
     display: flex;
     flex-direction: column;
+    margin-left: 71px;
 }
 
 .infrastructure-name {
     position: relative;
     display: block;
+    padding-left: 20px;
 }
 
-.infrastructure-name:checked + .infra-box::before {
-  position: absolute;
-  top: 7px;
-  left: 2px;
-  width: 12px;
-  height: 20px;
-  background-image: url(../images/checked-box-icon.svg);
-  content: "";
+.infra-box {
+    display: none;
+}
+
+.infra-mark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    left: 0;
+    top: 1px;
+}
+
+.infra-box[type="checkbox"]:checked + .infra-mark {
+    background-image: url(../images/checked-box-icon.svg);
+    background-repeat: no-repeat;
+    background-position-x: 4px;
+    background-position-y: 5px;
+}
+
+.house-name {
+    position: relative;
+    display: block;
+    padding-left: 20px;
+}
+
+.house-radio {
+    display: none;
+}
+
+.house-mark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    left: 0;
+    top: 1px;
+    border: none;
+}
+
+.house-radio[type="radio"]:checked + .house-mark::after {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #3F5E72;
+    content: "";
+    border-radius: 50%;
+}
+
+.infrastructure-name:hover .infra-mark {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.infrastructure-name:focus .infra-mark {
+    background-color: #FFFFFF;
+}
+
+.infrastructure-name:active .infra-mark {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.house-name:hover .house-mark {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.house-name:focus .house-mark {
+    background-color: #FFFFFF;
+}
+
+.house-name:active .house-mark {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .house-name:hover {
@@ -812,7 +883,7 @@ body {
 
 .prices-set {
     display: flex;
-    margin-left: 120px;
+    margin-left: 150px;
 }
 
 .infrastructure-item, .housing-item { /* варианты выбора */
@@ -846,12 +917,13 @@ body {
     padding: 12px 20px;
     width: 143px;
     border: none;
+    padding-right: 40px;
 }
 
 .prices-input::-webkit-outer-spin-button,
 .prices-input::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+    appearance: none;
+    margin: 0;
 }
 
 .input-from {
@@ -966,7 +1038,7 @@ body {
 .catalog-no-color { /* кнопка сброса без фона */
     background-color: transparent;
     border: none;
-    margin-top: 32px;
+    margin-top: 31px;
 }
 
 .catalog-no-color:hover {
@@ -993,7 +1065,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: 70px;
+    margin-left: 50px;
 }
 
 /* секция с информацией о гостиницах */
@@ -1022,23 +1094,12 @@ body {
     border-radius: 4px;
     cursor: pointer;
     padding-left: 18px;
-    padding-right: 18px;
+    padding-right: 40px;
     appearance: none;
-    position: relative;
-}
-
-.hotel-sorting-wrap::after {
-    position: absolute;
-    content: "";
     background-image: url(../images/arrow-select.svg);
-    width: 12px;
-    height: 7px;
-    z-index: -1;
     background-repeat: no-repeat;
-    right: 0;
-    top: 0%;
-	background-position-y: 52%;
-	background-position-x: 50%;
+    background-position-x: 260px;
+	background-position-y: 19px;
 }
 
 .hotel-sorting:hover {
@@ -1392,6 +1453,7 @@ body {
     background-color: #ffffff;
     border: none;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .modal-title {
@@ -1427,6 +1489,7 @@ body {
     background-size: 16px 15px;
     background-position-x: 400px;
     background-position-y: center;
+    padding-right: 50px;
 }
 
 .modal-input-adults, .modal-input-children {
@@ -1537,14 +1600,14 @@ body {
     display: inline-block;
 }
 
-.label-adults {
+.container-adults {
     display: grid;
     grid-auto-flow: column;
     width: 247px;
     grid-template-columns: 137px 40px 31px 40px;
 }
 
-.label-children {
+.container-children {
     display: grid;
     grid-auto-flow: column;
     width: 242px;
@@ -1560,11 +1623,21 @@ body {
 
 .info-icon {
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .info-icon:hover circle {
     fill: #68A2CA;
     position: relative;
+}
+
+.info-icon-button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 26px;
+    height: 26px;
+    background-color: #FFFFFF;
 }
 
 .tooltip-text {
@@ -1583,8 +1656,8 @@ body {
     right: 114px;
 }
 
-.info-icon:hover + .tooltip-text,
-.info-icon:focus + .tooltip-text {
+.info-icon-button:hover + .tooltip-text,
+.info-icon-button:focus + .tooltip-text {
   display: block;
 }
 
@@ -1641,28 +1714,34 @@ body {
     fill: rgba(0, 0, 0, 0.3);
 }
 
-.button-minus-icon:hover path {
-    fill: rgba(0, 0, 0, 1);
+.button-minus:hover path {
+    fill: #000000;
+    fill-opacity: 1;
 }
 
-.button-minus-icon:focus path {
-    fill: rgba(0, 0, 0, 1);
+.button-minus:focus path {
+    fill: #000000;
+    fill-opacity: 1;
 }
 
-.button-minus-icon:active path {
-    fill: rgba(0, 0, 0, 0.2);
+.button-minus:active path {
+    fill: #000000;
+    fill-opacity: 0.2;
 }
 
-.button-plus-icon:hover path {
-    fill: rgba(0, 0, 0, 1);
+.button-plus:hover path {
+    fill: #000000;
+    fill-opacity: 1;
 }
 
-.button-plus-icon:focus path {
-    fill: rgba(0, 0, 0, 1);
+.button-plus:focus path {
+    fill: #000000;
+    fill-opacity: 1;
 }
 
-.button-plus-icon:active path {
-    fill: rgba(0, 0, 0, 0.2);
+.button-plus:active path {
+    fill: #000000;
+    fill-opacity: 0.2;
 }
 
 .modal-search-button:hover {
