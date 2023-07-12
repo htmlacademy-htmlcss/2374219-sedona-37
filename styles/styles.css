@@ -35,9 +35,10 @@ body {
     color: #333333;
     height: 100%;
     margin: 0;
-  }
+}
 
-.main-container { /* основной фон сайта */
+/* основной фон сайта */
+.main-container {
     display: flex;
     flex-direction: column;
     width: 1200px;
@@ -107,7 +108,8 @@ body {
     margin-bottom: 0;
 }
 
-.site-navigation-link { /* навигация сайта */
+/* навигация сайта */
+.site-navigation-link {
     display: block;
     color: #000000;
     font-weight: 700;
@@ -125,7 +127,8 @@ body {
     opacity: 0.3;
 }
 
-.favorite-hotels-number { /* количество избранных отелей */
+/* количество избранных отелей */
+.favorite-hotels-number {
     font-size: 10px;
     line-height: 10px;
     color: #FFFFFF;
@@ -139,7 +142,8 @@ body {
     margin-top: 11px;
 }
 
-.main-link { /* ссылка "хочу сюда!" */
+/* ссылка "хочу сюда!" */
+.main-link {
     display: inline-block;
     background-color: #756157;
     color: #FFFFFF;
@@ -160,6 +164,7 @@ body {
     line-height: 20px;
 }
 
+/* состояния интерактивных элементов шапки */
 .main-link:hover {
     background-color: #615048;
 }
@@ -260,7 +265,8 @@ body {
     text-align: center;
 }
 
-.advantages-heading { /* заголовок секции */
+/* заголовок секции */
+.advantages-heading {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
@@ -281,7 +287,8 @@ body {
 
 }
 
-.advantages-title { /* заголовки преимуществ */
+/* заголовки преимуществ */
+.advantages-title {
     position: relative;
     font-size: 24px;
     line-height: 28px;
@@ -316,7 +323,8 @@ body {
     padding-top: 112px;
 }
 
-.advantages-comment { /* описания преимуществ */
+/* описания преимуществ */
+.advantages-comment {
     font-size: 18px;
     line-height: 21px;
     color:#333333;
@@ -327,12 +335,14 @@ body {
     margin: 0;
 }
 
+/* цвет текста преимуществ 1 и 5 */
 .color-white .advantages-title,
-.color-white .advantages-comment { /* цвет текста преимуществ 1 и 5 */
+.color-white .advantages-comment {
     color: #FFFFFF;
 }
 
-.advantages-list-item  { /* цвет фона преимуществ 1 и 5*/
+/* цвет фона преимуществ 1 и 5*/
+.advantages-list-item  {
     background-color: #82B3D3;
     width: 1200px;
 }
@@ -361,11 +371,13 @@ body {
     min-height: 385px;
 }
 
-.background-lightblue { /* цвет фона преимуществ 2 и 4 */
+/* цвет фона преимуществ 2 и 4 */
+.background-lightblue {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.background-lighter-blue { /* цвет фона преимущества 3 */
+/* цвет фона преимущества 3 */
+.background-lighter-blue {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -379,7 +391,8 @@ body {
     text-align: center;
 }
 
-.conditions-heading { /* заголовок секции */
+/* заголовок секции */
+.conditions-heading {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
@@ -392,7 +405,8 @@ body {
     padding-top: 0;
 }
 
-.conditions-title { /* заголовки условий */
+/* заголовки условий */
+.conditions-title {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
@@ -425,7 +439,8 @@ body {
     margin-top: 0;
 }
 
-.conditions-comment { /* описания условий */
+/* описания условий */
+.conditions-comment {
     font-size: 18px;
     line-height: 21px;
     color:#333333;
@@ -435,21 +450,24 @@ body {
     padding: 0;
 }
 
-.item-housing { /* иконка "жилья" */
+/* иконка "жилья" */
+.item-housing {
     background-image: url(../images/advantage-house.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 81px;
 }
 
-.item-food { /* иконка "еды" */
+/* иконка "еды" */
+.item-food {
     background-image: url(../images/advantage-food.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 82px;
 }
 
-.item-souvenirs { /* иконка "сувениров" */
+/* иконка "сувениров" */
+.item-souvenirs {
     background-image: url(../images/advantage-gift-box.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -461,7 +479,8 @@ body {
     text-align: center;
 }
 
-.hotel-search-heading { /* заголовок секции */
+/* заголовок секции */
+.hotel-search-heading {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
@@ -481,7 +500,8 @@ body {
     margin-bottom: 54px;
 }
 
-.hotel-search-link { /* ссылка "поиск гостиницы в седоне" */
+/* ссылка "поиск гостиницы в седоне" */
+.hotel-search-link {
     display: block;
     background-color: #756157;
     color: #FFFFFF;
@@ -499,6 +519,7 @@ body {
     margin: 54px 412px 96px;
 }
 
+/* состояния кнопки поиска гостиниц */
 .hotel-search-link:hover {
     background-color: #615048;
 }
@@ -525,7 +546,8 @@ body {
     margin-top: 54px;
 }
 
-.subscription { /* фон и цвет текста секции */
+/* фон и цвет текста секции */
+.subscription {
     background-image: url(../images/background-subscription.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -535,7 +557,8 @@ body {
     padding-top: 96px;
 }
 
-.subscription-heading { /* заголовок секции */
+/* заголовок секции */
+.subscription-heading {
     font-family: inherit;
     font-size: 30px;
     line-height: 36px;
@@ -553,7 +576,8 @@ body {
     padding-right: 362px;
 }
 
-.subscription-form { /*поле ввода электронной почты*/
+/*поле ввода электронной почты*/
+.subscription-form {
     font-family: inherit;
     font-size: 18px;
     line-height: 24px;
@@ -566,7 +590,8 @@ body {
     border-radius: 4px 0 0 4px;
 }
 
-.subscription-button { /* кнопка "подписаться" */
+/* кнопка "подписаться" */
+.subscription-button {
     font-family: inherit;
     background-color: #82B3D3;
     color: #FFFFFF;
@@ -582,6 +607,7 @@ body {
     cursor: pointer;
 }
 
+/* состояния кнопки подписаться */
 .subscription-button:hover {
     background-color: #68A2CA;
 }
@@ -614,7 +640,8 @@ body {
     padding-bottom: 35px;
 }
 
-.phone-link { /* ссылка на номер телефона */
+/* ссылка на номер телефона */
+.phone-link {
     font-size: 40px;
     line-height: 40px;
     color: #000000;
@@ -633,6 +660,7 @@ body {
     color: rgba(117, 97, 87, 0.3)
 }
 
+/* социальные ссылки */
 .social-list {
     display: grid;
     grid-template-columns: repeat(3, 48px);
@@ -685,7 +713,8 @@ body {
 
 /* catalog */
 
-.catalog-filter { /* фильтр */
+/* фильтр */
+.catalog-filter {
     color: #FFFFFF;
     background-color: #756157;
     background-image: url(../images/background-filter.jpg);
@@ -695,14 +724,16 @@ body {
     min-height: 412px;
 }
 
-.catalog-title { /* название каталога */
+/* название каталога */
+.catalog-title {
     font-size: 60px;
     line-height: 78px;
     margin-bottom: 8px;
     margin-top: 0;
 }
 
-.breadcrumbs { /* хлебные крошки */
+/* хлебные крошки */
+.breadcrumbs {
     font-size: 16px;
     line-height: 21px;
     display: flex;
@@ -728,7 +759,8 @@ body {
     display: block;
 }
 
-.breadcrumbs-catalog { /* ссылка на гостиницы */
+/* ссылка на гостиницы */
+.breadcrumbs-catalog {
     color: #FFFFFF;
     text-decoration: none;
     margin-left: 10px;
@@ -761,7 +793,8 @@ body {
     margin: 0;
 }
 
-.infrastructure-title, .housing-title, .prices-title { /* названия групп */
+/* названия групп */
+.infrastructure-title, .housing-title, .prices-title {
     font-weight: 700;
     margin-bottom: 32px;
     padding: 0;
@@ -784,6 +817,7 @@ body {
     padding-left: 20px;
 }
 
+/* стилизация чекбоксов и радиокнопок */
 .infra-box {
     display: none;
 }
@@ -837,6 +871,7 @@ body {
     border-radius: 50%;
 }
 
+/* состояния чекбоксов и радиокнопок */
 .infrastructure-name:hover .infra-mark {
     background-color: rgba(255, 255, 255, 0.6);
 }
@@ -886,7 +921,8 @@ body {
     margin-left: 150px;
 }
 
-.infrastructure-item, .housing-item { /* варианты выбора */
+/* варианты выбора */
+.infrastructure-item, .housing-item {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -901,13 +937,15 @@ body {
     margin-bottom: 0;
 }
 
-.prices-item { /* от и до */
+/* от и до */
+.prices-item {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
 }
 
-.prices-input { /* значения стоимости */
+/* значения стоимости */
+.prices-input {
     font-family: inherit;
     font-weight: 700;
     font-size: 18px;
@@ -924,6 +962,10 @@ body {
 .prices-input::-webkit-inner-spin-button {
     appearance: none;
     margin: 0;
+}
+
+.prices-input[type="number"] {
+    appearance: textfield;
 }
 
 .input-from {
@@ -965,6 +1007,7 @@ body {
     bottom: -12px;
 }
 
+/* шкала */
 .range-scale {
     position: relative;
     height: 4px;
@@ -1000,7 +1043,8 @@ body {
     right: 0;
 }
 
-.catalog-button { /* голубые кнопки каталога */
+/* голубые кнопки каталога */
+.catalog-button {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -1035,7 +1079,8 @@ body {
     cursor: default;
 }
 
-.catalog-no-color { /* кнопка сброса без фона */
+/* кнопка сброса без фона */
+.catalog-no-color {
     background-color: transparent;
     border: none;
     margin-top: 31px;
@@ -1070,7 +1115,8 @@ body {
 
 /* секция с информацией о гостиницах */
 
-.hotel-found { /* количество найденных гостиниц */
+/* количество найденных гостиниц */
+.hotel-found {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -1083,7 +1129,8 @@ body {
     margin-bottom: 0;
 }
 
-.hotel-sorting { /* сортировка гостиниц */
+/* сортировка гостиниц */
+.hotel-sorting {
     font-family: inherit;
     font-size: 18px;
     line-height: 21px;
@@ -1100,6 +1147,7 @@ body {
     background-repeat: no-repeat;
     background-position-x: 260px;
 	background-position-y: 19px;
+    background-color: #FFFFFF;
 }
 
 .hotel-sorting:hover {
@@ -1116,7 +1164,6 @@ body {
 }
 
 /* список гостиниц */
-
 .found-sorting {
     display: flex;
     justify-content: flex-end;
@@ -1212,14 +1259,16 @@ body {
     vertical-align: bottom;
 }
 
-.hotel-name { /* название гостиницы */
+/* название гостиницы */
+.hotel-name {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
     margin: 0;
 }
 
-.hotel-link-name { /* ссылка на гостиницу */
+/* ссылка на гостиницу */
+.hotel-link-name {
     text-decoration: none;
     grid-column: 1/3;
     grid-row: 2/3;
@@ -1230,20 +1279,23 @@ body {
     grid-row: 1/2;
 }
 
-.hotel-subject { /* вид жилья */
+/* вид жилья */
+.hotel-subject {
     font-size: 18px;
     line-height: 21px;
     margin: 0;
 }
 
-.hotel-minprice { /* стоимость жилья */
+/* стоимость жилья */
+.hotel-minprice {
     font-size: 18px;
     line-height: 21px;
     margin: 0;
     text-align: right;
 }
 
-.hotel-rating { /* рейтинг гостиницы */
+/* рейтинг гостиницы */
+.hotel-rating {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -1255,7 +1307,8 @@ body {
     padding-bottom: 8px;
 }
 
-.hotel-details { /* ссылка "подробнее" */
+/* ссылка "подробнее" */
+.hotel-details {
     background-color: #756157;
     text-decoration: none;
     padding: 8px 26px;
@@ -1273,7 +1326,8 @@ body {
     color: rgba(255, 255, 255, 0.3)
 }
 
-.hotel-in-favorites { /* кнопка "в избранном" */
+/* кнопка "в избранном" */
+.hotel-in-favorites {
     background-color: #7DB54F;
     padding: 0;
 }
@@ -1306,6 +1360,7 @@ body {
     cursor: default;
 }
 
+/* звёзды гостиницы */
 .hotel-stars {
     background-image: url(../images/star-hotel-icon.svg);
     height: 17px;
@@ -1325,6 +1380,7 @@ body {
     width: 40px;
 }
 
+/* пагинация */
 .pagination-list {
     display: flex;
     padding: 0;
@@ -1337,7 +1393,8 @@ body {
     list-style-type: none;
 }
 
-.pagination-link { /* пагинация с голубым фоном */
+/* пагинация с голубым фоном */
+.pagination-link {
     display: inline-block;
     height: 60px;
     font-weight: 700;
@@ -1365,7 +1422,8 @@ body {
     color: rgba(255, 255, 255, 0.3)
 }
 
-.pagination-current { /* текущая страница 1 */
+/* текущая страница 1 */
+.pagination-current {
     background-color: #F2F2F2;
     color: #000000;
     border-radius: 4px;
@@ -1387,7 +1445,8 @@ body {
     color: #000000;
 }
 
-.dots { /* точки */
+/* точки */
+.dots {
     background-color: #FFFFFF ;
     color: #000000;
 }
@@ -1566,10 +1625,18 @@ body {
     margin: 0;
 }
 
+.modal-input-adults[type="number"] {
+    appearance: textfield;
+}
+
 .modal-input-children::-webkit-outer-spin-button,
 .modal-input-children::-webkit-inner-spin-button {
     appearance: none;
     margin: 0;
+}
+
+.modal-input-children[type="number"] {
+    appearance: textfield;
 }
 
 .button-minus, .button-plus {
