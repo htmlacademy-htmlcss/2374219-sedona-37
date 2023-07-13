@@ -9,20 +9,20 @@
   </head>
   <body>
     <div class="main-container">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <nav class="main-navigation">
-          <a class="logo" href="index.html">
-            <img src="images/main-logo.svg" width="140" height="70" alt="Логотип Седоны.">
+          <a class="logo" href="index.html" aria-current="page">
+            <img class="logo-image" src="images/main-logo.svg" width="140" height="70" alt="Логотип Седоны.">
           </a>
           <ul class="site-navigation">
             <li class="site-navigation-item">
-              <a class="site-navigation-link" href="index.html">Главная</a>
+              <a class="site-navigation-link" href="index.html" aria-current="page">Главная</a>
             </li>
             <li class="site-navigation-item">
               <a class="site-navigation-link" href="#">О Седоне</a>
             </li>
             <li class="site-navigation-item site-navigation-item-current">
-              <a class="site-navigation-link" href="catalog.html" aria-current="page">Гостиницы</a>
+              <a class="site-navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="hidden-items-list">
@@ -41,8 +41,8 @@
         </nav>
         <a class="main-link" href="#">Хочу сюда!</a>
       </header>
-      <main class="page">
-        <section class="catalog-filter">
+      <main class="page" data-test="main">
+        <section class="catalog-filter" data-test="filter">
           <h1 class="catalog-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -55,54 +55,54 @@
             </li>
           </ul>
           <form class="filter-info" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="infrastructure infrastructure-set">
-              <legend class="infrastructure-title">Инфраструктура:</legend>
+            <fieldset class="filter-set infrastructure-set">
+              <legend class="set-title">Инфраструктура:</legend>
               <label class="infrastructure-name">
-                <input class="infra-box" type="checkbox" name="swimming-pool" checked>
+                <input class="infra-box visually-hidden" type="checkbox" name="swimming-pool" checked>
                 <span class="infra-mark"></span>
                 <span class="infrastructure-item">Бассейн</span>
               </label>
               <label class="infrastructure-name">
-                <input class="infra-box" type="checkbox" name="parking" checked>
+                <input class="infra-box visually-hidden" type="checkbox" name="parking" checked>
                 <span class="infra-mark"></span>
                 <span class="infrastructure-item">Парковка</span>
               </label>
               <label class="infrastructure-name">
-                <input class="infra-box" type="checkbox" name="Wi-Fi">
+                <input class="infra-box visually-hidden" type="checkbox" name="Wi-Fi">
                 <span class="infra-mark"></span>
                 <span class="infrastructure-item last-item">Wi-Fi</span>
               </label>
             </fieldset>
-            <fieldset class="housing housing-set">
-              <legend class="housing-title">Тип Жилья:</legend>
+            <fieldset class="filter-set housing-set">
+              <legend class="set-title">Тип Жилья:</legend>
               <label class="house-name">
-                <input class="house-radio" type="radio" name="housing-type" value="hotel" checked>
+                <input class="house-radio visually-hidden" type="radio" name="housing-type" value="hotel" checked>
                 <span class="house-mark"></span>
                 <span class="housing-item">Гостиница</span>
               </label>
               <label class="house-name">
-                <input class="house-radio" type="radio" name="housing-type" value="motel">
+                <input class="house-radio visually-hidden" type="radio" name="housing-type" value="motel">
                 <span class="house-mark"></span>
                 <span class="housing-item">Мотель</span>
               </label>
               <label class="house-name">
-                <input class="house-radio" type="radio" name="housing-type" value="apartments">
+                <input class="house-radio visually-hidden" type="radio" name="housing-type" value="apartments">
                 <span class="house-mark"></span>
                 <span class="housing-item last-item">Апартаменты</span>
               </label>
             </fieldset>
-            <fieldset class="prices prices-set">
-              <legend class="prices-title">Стоимость, ₽:</legend>
+            <fieldset class="filter-set prices-set">
+              <legend class="set-title">Стоимость, ₽:</legend>
               <div class="range">
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label">
                     <input class="prices-input input-from" type="number" name="min-price" value="0" required>
-                    <span class="prices-from">от</span>
+                    <span class="prices-range prices-from">от</span>
                   </label>
                   <label class="catalog-filter-label">
                     <input class="prices-input input-to" type="number" name="max-price" value="9000" required>
                     </label>
-                  <span class="prices-to">до</span>
+                  <span class="prices-range prices-to">до</span>
                 </div>
                 <div class="range-scale">
                   <div class="range-bar">
@@ -123,7 +123,8 @@
           </form>
         </section>
         <div class="hotels-container">
-          <section class="hotels-info">
+          <section class="hotels-info" data-test="catalog">
+            <h2 class="visually-hidden">Информация о гостиницах</h2>
             <div class="found-sorting">
               <p class="hotel-found">Найдено гостиниц: 38</p>
               <select class="hotel-sorting" name="sorting" aria-label="Сортировка">
@@ -207,38 +208,39 @@
                 <span class="hotel-rating">Рейтинг: 5,0</span>
               </li>
             </ul>
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current" href="catalog.html" aria-current="page">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link dots" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
           </section>
-          <ul class="pagination-list">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current" href="catalog.html" aria-current="page">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link dots" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
         </div>
-        <section class="subscription-white">
+        <section class="subscription-white" data-test="subscribe">
           <h2 class="subscription-heading-black">Подпишитесь на рассылку</h2>
           <p class="subscription-comment">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="form-line" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscription-form" type="email" name="subscription-mail" placeholder="Ваш e-mail" required>
+            <label class="visually-hidden" for="form-input">Введите ваш e-mail.</label>
+            <input class="subscription-form" id="form-input" type="email" name="subscription-mail" placeholder="Ваш e-mail" required>
             <button class="subscription-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
-      <footer class="site-footer">
+      <footer class="site-footer" data-test="footer">
         <ul class="social-list">
           <li class="social-list-item">
             <a class="social-item-link vkontakte" href="https://vk.com/htmlacademy">
