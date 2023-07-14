@@ -70,7 +70,7 @@
               <label class="infrastructure-name">
                 <input class="infra-box visually-hidden" type="checkbox" name="Wi-Fi">
                 <span class="infra-mark"></span>
-                <span class="infrastructure-item last-item">Wi-Fi</span>
+                <span class="infrastructure-item">Wi-Fi</span>
               </label>
             </fieldset>
             <fieldset class="filter-set housing-set">
@@ -88,7 +88,7 @@
               <label class="house-name">
                 <input class="house-radio visually-hidden" type="radio" name="housing-type" value="apartments">
                 <span class="house-mark"></span>
-                <span class="housing-item last-item">Апартаменты</span>
+                <span class="housing-item">Апартаменты</span>
               </label>
             </fieldset>
             <fieldset class="filter-set prices-set">
@@ -132,15 +132,17 @@
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
               </select>
-              <button class="hotel-card-view cards-view hotel-card-view-current" type="button">
-                <span class="visually-hidden">Показать карточками</span>
-              </button>
-              <button class="hotel-card-view one-card-view" type="button">
-                <span class="visually-hidden">Показать по одному</span>
-              </button>
-              <button class="hotel-card-view card-list-view" type="button">
-                <span class="visually-hidden">Показать списком</span>
-              </button>
+              <div class="cards-view-container">
+                <button class="hotel-card-view cards-view hotel-card-view-current" type="button">
+                  <span class="visually-hidden">Показать карточками</span>
+                </button>
+                <button class="hotel-card-view one-card-view" type="button">
+                  <span class="visually-hidden">Показать по одному</span>
+                </button>
+                <button class="hotel-card-view card-list-view" type="button">
+                  <span class="visually-hidden">Показать списком</span>
+                </button>
+              </div>
             </div>
             <ul class="hotel-list">
               <li class="hotel-list-item">
